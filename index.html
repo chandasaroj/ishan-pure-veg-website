@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishan Pure Veg Restaurant | Khavaiyye Punekars' Veg Favourite</title>
+  <meta name="description" content="Ishan Pure Veg Restaurant - Pune's premier vegetarian destination serving authentic North Indian, South Indian, Indo-Chinese, Punjabi & Tandoor delicacies across Sinhgad Road & Model Colony.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. STICKY NAVBAR
+       ========================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ishan Pure Veg Home">
+        <div class="brand-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+          </svg>
+        </div>
+        <div class="brand-text-wrapper">
+          <span class="brand-name">Ishan</span>
+          <span class="brand-sub">
+            <span class="veg-indicator"></span> Pure Veg
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu (Clean, links only) -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#locations" class="nav-link">Locations</a>
+        <a href="#social" class="nav-link">Social</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm btn-header-order" data-open-order-modal>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Order Online
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Dedicated Mobile Navigation Drawer (Hidden by default, only shown when toggled on mobile) -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-symbol">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+          </svg>
+        </div>
+        <div class="brand-text-wrapper">
+          <span class="brand-name" style="color: #ffffff;">Ishan</span>
+          <span class="brand-sub">
+            <span class="veg-indicator"></span> Pure Veg
+          </span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-links">
+      <a href="#hero" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About Us</a>
+      <a href="#menu" class="mobile-nav-link">Menu</a>
+      <a href="#facilities" class="mobile-nav-link">Facilities</a>
+      <a href="#gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#locations" class="mobile-nav-link">Locations</a>
+      <a href="#social" class="mobile-nav-link">Social</a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;" data-open-order-modal>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Order Online / Reserve
+      </button>
+      <div class="mobile-nav-phones">
+        <a href="tel:9890320150">📍 Sinhgad: 9890320150</a>
+        <a href="tel:7875727608">📍 Model Colony: 7875727608</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ==========================================
+       2. HERO SECTION
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-glow-follower" id="hero-glow-follower"></div>
+    
+    <!-- Floating Spice Particles -->
+    <div class="hero-spices" aria-hidden="true">
+      <span class="spice spice-1">✨</span>
+      <span class="spice spice-2">🌿</span>
+      <span class="spice spice-3">🌶️</span>
+      <span class="spice spice-4">✨</span>
+      <span class="spice spice-5">🌿</span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-content fade-up">
+        <div class="hero-badge">
+          <span class="veg-indicator"></span> 100% Pure Vegetarian Restaurant
+        </div>
+        <h1 class="hero-title">Ishan <span class="hero-highlight">Pure Veg</span> Restaurant</h1>
+        <p class="hero-tagline">"Khavaiyye Punekars' <span class="hero-tagline-highlight">Veg Favourite</span>"</p>
+        
+        <!-- Refined Warmth Caption -->
+        <div class="hero-flavor-pill">
+          <span class="wobble-icon">🌿</span> Cooked fresh. Served with love. • 100% Pure Vegetarian <span class="wobble-icon">✨</span>
+        </div>
+
+        <p class="hero-description">
+          Experience Pune's heartiest pure-veg culinary heritage. Serving authentic North Indian curries, crispy South Indian dosas, sizzlers, Indo-Chinese & Punjabi clay-oven tandoor delights crafted with purity and love.
+        </p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-accent">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+            </svg>
+            View Menu
+          </a>
+          <button class="btn btn-outline-white" data-open-order-modal>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Order Online / Reserve
+          </button>
+        </div>
+
+        <!-- Customer Avatar Social Proof Stack -->
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <div class="avatar-circle avatar-amber" title="Customer Rating">P</div>
+            <div class="avatar-circle avatar-green" title="Customer Rating">R</div>
+            <div class="avatar-circle avatar-teal" title="Customer Rating">A</div>
+            <div class="avatar-circle avatar-more">+5k</div>
+          </div>
+          <div class="social-proof-text">
+            <strong><span class="counter-num" data-target="5000" data-suffix="+">5,000+</span> People Trust Us</strong>
+            <span>★★★★★ Google & Justdial (4.4★)</span>
+          </div>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>Top Rated Pure Veg in Pune</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Sinhgad Rd & Model Colony</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>7:00 AM – 11:30 PM Daily</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up delay-1">
+        <div class="hero-card-stack">
+          <!-- Subtle Animated Steam Wisps -->
+          <div class="steam-container" aria-hidden="true">
+            <span class="steam-wisp wisp-1"></span>
+            <span class="steam-wisp wisp-2"></span>
+            <span class="steam-wisp wisp-3"></span>
+          </div>
+
+          <img src="images/hero-paneer.jpg" alt="Ishan Pure Veg Traditional Indian Feast" class="hero-main-img">
+          
+          <div class="hero-stats-wrapper">
+            <!-- Floating Stat Card 1: 5000+ Happy Customers (Top-Right) -->
+            <div class="hero-floating-stat stat-top-right">
+              <div class="stat-icon gold">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="stat-details">
+                <h4><span class="counter-num" data-target="5000" data-suffix="+">5,000+</span></h4>
+                <p>Happy Customers</p>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 2: 2 Branches in Pune (Top-Left) -->
+            <div class="hero-floating-stat stat-top-left">
+              <div class="stat-icon primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="stat-details">
+                <h4><span class="counter-num" data-target="2" data-suffix=" Branches">2 Branches</span></h4>
+                <p>Sinhgad & Model Colony</p>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 3: 4.4★ Rating (Bottom-Left) -->
+            <div class="hero-floating-stat stat-bottom-left">
+              <div class="stat-icon amber">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#ea580c" stroke="#ea580c" stroke-width="1.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="stat-details">
+                <h4><span class="counter-num" data-target="4.4" data-decimals="1" data-suffix=" ★ Rating">4.4 ★ Rating</span></h4>
+                <p>Google & Justdial</p>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 4: Trusted by Thousands (Bottom-Right) -->
+            <div class="hero-floating-stat stat-bottom-right">
+              <div class="stat-icon green">
+                <span class="veg-indicator"></span>
+              </div>
+              <div class="stat-details">
+                <h4>Trusted by Thousands</h4>
+                <p>100% Pure Veg Heritage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       3. ABOUT US SECTION
+       ========================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images fade-up">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/hero/about-dining.jpg) -->
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Ishan Pure Veg Ambient Dining" class="about-img-main">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/hero/about-food.jpg) -->
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80" alt="Rich Indian Vegetarian Dishes" class="about-img-secondary">
+        </div>
+
+        <div class="about-content fade-up delay-1">
+          <span class="section-tag">
+            <span class="wobble-icon">✨</span> <span class="veg-indicator"></span> Our Story & Philosophy
+          </span>
+          <h2>Where Tradition Meets Contemporary Pure-Veg Dining <span class="wobble-icon">🌿</span></h2>
+          <p class="about-highlight">Celebrating Pune's authentic palate with passion, warmth, and purity.</p>
+          <p class="about-text">
+            For years, <strong>Ishan Pure Veg Restaurant</strong> has earned its place as "Khavaiyye Punekars' Veg Favourite." We celebrate authentic multi-cuisine artistry with an unwavering dedication to 100% vegetarian culinary perfection.
+          </p>
+          <p class="about-text">
+            From steaming morning South Indian filter coffee and dosas to rich North Indian curries, smoky Punjabi tandoor kebabs, and zesty Indo-Chinese sizzlers, every plate is prepared fresh with hand-ground spices and pure ghee/butter. Whether you’re stopping by for a quick breakfast, a relaxed family lunch, or celebrating an evening in our spacious indoor AC or breezy outdoor seating, Ishan welcomes you home.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <h4>Multi-Cuisine Variety</h4>
+                <p>North & South Indian, Chinese, Tandoor & Soups</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <h4>Family & Kid Friendly</h4>
+                <p>Warm ambience, safe seating & comforting recipes</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <h4>Indoor & Outdoor Seating</h4>
+                <p>Pleasant spaces suited for every gathering</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <h4>Purity Guaranteed</h4>
+                <p>Strict 100% vegetarian kitchen hygiene standards</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#locations" class="btn btn-outline">
+            Visit Our Branches
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       4. MENU SECTION
+       ========================================== -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">🌶️</span> <span class="veg-indicator"></span> Culinary Delights
+        </span>
+        <h2 class="section-title">Explore Our Pure Veg Menu <span class="wobble-icon">🍛</span></h2>
+        <p class="section-subtitle">
+          Handpicked dishes crafted to bring out Pune's favourite flavours. Prepared fresh upon order with authentic recipes and hand-ground spices.
+        </p>
+      </div>
+
+      <!-- Must-Try Highlights -->
+      <div class="must-try-banner fade-up">
+        <div class="must-try-header">
+          <div>
+            <span class="must-try-badge">Chef's Signature Recommendations</span>
+            <h3>✨ Punekar's Must-Try Specials</h3>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">Crafted to perfection with our secret recipe blends</p>
+        </div>
+
+        <div class="must-try-grid">
+          <!-- Must Try 1: Veg Biryani -->
+          <div class="menu-card" data-category="rice must-try" data-must-try="true" data-tags="biryani rice hyderabadi veg dum">
+            <div class="menu-card-img-wrapper">
+              <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/veg-biryani.jpg) -->
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80" alt="Ishan Special Veg Dum Biryani" class="menu-card-img">
+              <span class="menu-card-badge highlight">🔥 Must-Try Special</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <div class="menu-card-title-group">
+                  <span class="veg-indicator"></span>
+                  <h4 class="menu-card-title">Ishan Special Veg Biryani</h4>
+                </div>
+                <span class="menu-card-price">₹260</span>
+              </div>
+              <p class="menu-card-desc">Fragrant long-grain basmati rice slow-cooked with fresh garden vegetables, paneer cubes, saffron, and aromatic spices. Served with cooling cucumber raita.</p>
+              <div class="menu-card-footer">
+                <span class="menu-tag-cuisine">Rice & Biryani</span>
+                <span>Chef's Choice</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Must Try 2: Paneer Butter Masala -->
+          <div class="menu-card" data-category="north-indian main-course must-try" data-must-try="true" data-tags="paneer butter masala punjabi gravy north indian">
+            <div class="menu-card-img-wrapper">
+              <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/paneer-butter-masala.jpg) -->
+              <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80" alt="Paneer Butter Masala" class="menu-card-img">
+              <span class="menu-card-badge highlight">⭐ Must-Try Special</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <div class="menu-card-title-group">
+                  <span class="veg-indicator"></span>
+                  <h4 class="menu-card-title">Paneer Butter Masala</h4>
+                </div>
+                <span class="menu-card-price">₹280</span>
+              </div>
+              <p class="menu-card-desc">Tender cottage cheese simmered in a velvety, buttery tomato-cashew gravy lightly spiced with kasturi methi and fresh cream. Pune's all-time favourite.</p>
+              <div class="menu-card-footer">
+                <span class="menu-tag-cuisine">North Indian / Punjabi</span>
+                <span>Best with Butter Naan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Must Try 3: Tom Kha Soup -->
+          <div class="menu-card" data-category="soups must-try" data-must-try="true" data-tags="tom kha soup coconut thai herbs starter">
+            <div class="menu-card-img-wrapper">
+              <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/tom-kha-soup.jpg) -->
+              <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80" alt="Authentic Tom Kha Soup" class="menu-card-img">
+              <span class="menu-card-badge highlight">⭐ Must-Try Special</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <div class="menu-card-title-group">
+                  <span class="veg-indicator"></span>
+                  <h4 class="menu-card-title">Tom Kha Soup (Veg)</h4>
+                </div>
+                <span class="menu-card-price">₹190</span>
+              </div>
+              <p class="menu-card-desc">Exquisite coconut milk broth infused with fresh galangal, lemongrass, kaffir lime, mushrooms, and tender vegetables. Soothing, aromatic and flavorful.</p>
+              <div class="menu-card-footer">
+                <span class="menu-tag-cuisine">Soups & Broths</span>
+                <span>Aromatic & Fresh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Controls: Tabs & Search -->
+      <div class="menu-controls fade-up">
+        <div class="menu-search-wrapper">
+          <svg class="menu-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="menu-search" class="menu-search-input" placeholder="Search dishes (e.g. Dosa, Paneer, Naan, Manchurian)..." aria-label="Search menu dishes">
+        </div>
+
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-filter="all">All Items</button>
+          <button class="tab-btn" data-filter="must-try">Must-Try</button>
+          <button class="tab-btn" data-filter="breakfast">Breakfast</button>
+          <button class="tab-btn" data-filter="south-indian">South Indian</button>
+          <button class="tab-btn" data-filter="north-indian">North Indian</button>
+          <button class="tab-btn" data-filter="indo-chinese">Indo-Chinese</button>
+          <button class="tab-btn" data-filter="soups">Soups</button>
+          <button class="tab-btn" data-filter="starters">Starters & Tandoor</button>
+          <button class="tab-btn" data-filter="main-course">Main Course</button>
+          <button class="tab-btn" data-filter="rice">Rice & Biryani</button>
+          <button class="tab-btn" data-filter="breads">Tandoor Breads</button>
+          <button class="tab-btn" data-filter="desserts">Desserts & Drinks</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menu-grid">
+
+        <!-- Item: Masala Dosa -->
+        <div class="menu-card fade-up" data-category="breakfast south-indian" data-tags="masala dosa south indian breakfast potato sambar chutney">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/masala-dosa.jpg) -->
+            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=700&q=80" alt="Crispy Masala Dosa" class="menu-card-img">
+            <span class="menu-card-badge">Breakfast Classic</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Mysore Masala Dosa</h4>
+              </div>
+              <span class="menu-card-price">₹130</span>
+            </div>
+            <p class="menu-card-desc">Golden crisp crepe lined with spicy red chutney, stuffed with seasoned potato masala. Served with hot sambar and freshly ground coconut chutneys.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">South Indian</span>
+              <span>Morning & Evening</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Medu Vada & Idli Combo -->
+        <div class="menu-card fade-up" data-category="breakfast south-indian" data-tags="idli vada medu sambar dip south indian breakfast">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/idli-vada.jpg) -->
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=80" alt="Idli Sambar Vada" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Idli Vada Sambar Dip</h4>
+              </div>
+              <span class="menu-card-price">₹110</span>
+            </div>
+            <p class="menu-card-desc">Steamed fluffy rice idlis and crunchy cumin-laced medu vadas dipped in a piping bowl of flavourful drumstick sambar.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">South Indian</span>
+              <span>Available 7 AM Onwards</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Tandoori Paneer Tikka -->
+        <div class="menu-card fade-up" data-category="starters" data-tags="paneer tikka tandoor starter kebab mint chutney">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/paneer-tikka.jpg) -->
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80" alt="Tandoori Paneer Tikka" class="menu-card-img">
+            <span class="menu-card-badge">Tandoor Special</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Tandoori Paneer Tikka</h4>
+              </div>
+              <span class="menu-card-price">₹250</span>
+            </div>
+            <p class="menu-card-desc">Plump cottage cheese chunks marinated in spiced hung curd, char-grilled over charcoal in clay tandoor with bell peppers & onions.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">Tandoor & Starters</span>
+              <span>Smoky & Juicy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Dal Makhani -->
+        <div class="menu-card fade-up" data-category="north-indian main-course" data-tags="dal makhani black lentils north indian curry">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/dal-makhani.jpg) -->
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Dal Makhani" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Dal Makhani Awadhi</h4>
+              </div>
+              <span class="menu-card-price">₹220</span>
+            </div>
+            <p class="menu-card-desc">Black lentils and red kidney beans slow-cooked overnight on mild embers with white butter, fresh tomatoes, and cream.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">North Indian</span>
+              <span>Slow Cooked 12 Hrs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Veg Hakka Noodles -->
+        <div class="menu-card fade-up" data-category="indo-chinese" data-tags="hakka noodles chinese chowmein wok stir fry">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/hakka-noodles.jpg) -->
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=700&q=80" alt="Veg Hakka Noodles" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Veg Hakka Noodles</h4>
+              </div>
+              <span class="menu-card-price">₹190</span>
+            </div>
+            <p class="menu-card-desc">Wok-tossed noodles with shredded cabbage, carrots, capsicum, scallions, and light soya sauce with garlic aroma.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">Indo-Chinese</span>
+              <span>Wok Tossed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Veg Manchurian Gravy -->
+        <div class="menu-card fade-up" data-category="indo-chinese main-course" data-tags="manchurian gravy chinese indo chinese">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/veg-manchurian.jpg) -->
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80" alt="Veg Manchurian Gravy" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Veg Manchurian Gravy</h4>
+              </div>
+              <span class="menu-card-price">₹200</span>
+            </div>
+            <p class="menu-card-desc">Crisp vegetable dumplings cooked in a savory, tangy and spicy ginger-garlic and dark soya gravy. Pairs excellently with fried rice.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">Indo-Chinese</span>
+              <span>Tangy & Zesty</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Butter Naan & Garlic Naan -->
+        <div class="menu-card fade-up" data-category="breads" data-tags="butter naan garlic naan roti tandoor bread">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/butter-naan.jpg) -->
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80" alt="Tandoori Butter Naan" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Garlic Butter Naan</h4>
+              </div>
+              <span class="menu-card-price">₹70</span>
+            </div>
+            <p class="menu-card-desc">Refined wheat bread baked inside a red-hot tandoor clay oven, brushed generously with melted butter and roasted minced garlic.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">Tandoor Breads</span>
+              <span>Fresh From Clay Oven</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item: Gulab Jamun with Ice Cream -->
+        <div class="menu-card fade-up" data-category="desserts" data-tags="gulab jamun ice cream dessert sweet kulfi">
+          <div class="menu-card-img-wrapper">
+            <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/menu/gulab-jamun.jpg) -->
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=700&q=80" alt="Gulab Jamun with Vanilla Ice Cream" class="menu-card-img">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <div class="menu-card-title-group">
+                <span class="veg-indicator"></span>
+                <h4 class="menu-card-title">Warm Gulab Jamun with Ice Cream</h4>
+              </div>
+              <span class="menu-card-price">₹120</span>
+            </div>
+            <p class="menu-card-desc">Soft khoya dumplings dipped in warm saffron-cardamom sugar syrup, served alongside a rich scoop of creamy vanilla bean ice cream.</p>
+            <div class="menu-card-footer">
+              <span class="menu-tag-cuisine">Desserts & Treats</span>
+              <span>Sweet Indulgence</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="menu-empty-state" style="display: none; text-align: center; padding: 4rem 1rem;">
+        <p style="font-size: 1.2rem; color: var(--color-text-muted); margin-bottom: 1rem;">No dishes found matching your search.</p>
+        <button class="btn btn-outline btn-sm" onclick="document.getElementById('menu-search').value = ''; document.querySelector('.tab-btn[data-filter=\'all\']').click();">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       5. FACILITIES SECTION
+       ========================================== -->
+  <section class="section" id="facilities">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">✨</span> <span class="veg-indicator"></span> Comfort & Hospitality
+        </span>
+        <h2 class="section-title">Dining & Service Facilities <span class="wobble-icon">🌿</span></h2>
+        <p class="section-subtitle">
+          Everything you need for a comfortable dining experience — from breezy outdoor tables to quick doorstep delivery.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- 1. Home Delivery -->
+        <div class="facility-card fade-up">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3>Home Delivery</h3>
+          <p>Quick doorstep delivery with leakproof, thermal packaging to preserve piping freshness.</p>
+        </div>
+
+        <!-- 2. Takeaway -->
+        <div class="facility-card fade-up delay-1">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </div>
+          <h3>Takeaway / Pickup</h3>
+          <p>Convenient call-ahead order & pickup counters across both Sinhgad Road and Model Colony.</p>
+        </div>
+
+        <!-- 3. Dine-in -->
+        <div class="facility-card fade-up delay-2">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3>Dine-In Experience</h3>
+          <p>Spacious, sanitised tables, attentive table service, and welcoming hospitality.</p>
+        </div>
+
+        <!-- 4. Indoor Seating -->
+        <div class="facility-card fade-up delay-3">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3>Indoor AC Seating</h3>
+          <p>Air-conditioned dining halls with soothing acoustics and elegant ambient lighting.</p>
+        </div>
+
+        <!-- 5. Outdoor Seating -->
+        <div class="facility-card fade-up">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+            </svg>
+          </div>
+          <h3>Outdoor Seating</h3>
+          <p>Pleasant, airy outdoor seating perfect for Pune's evening breezes and morning chai.</p>
+        </div>
+
+        <!-- 6. Family Friendly -->
+        <div class="facility-card fade-up delay-1">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Family Friendly</h3>
+          <p>Comfortable group seating configurations suited for large family get-togethers & celebrations.</p>
+        </div>
+
+        <!-- 7. Kid Friendly -->
+        <div class="facility-card fade-up delay-2">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <h3>Kid Friendly</h3>
+          <p>High chairs available on request and mild, delicious non-spicy choices kids love.</p>
+        </div>
+
+        <!-- 8. Pure Veg Only -->
+        <div class="facility-card fade-up delay-3">
+          <div class="facility-icon-wrap">
+            <span class="veg-indicator lg"></span>
+          </div>
+          <h3>100% Pure Veg Only</h3>
+          <p>Dedicated vegetarian cookware, zero cross-contamination, trusted by pure-veg communities.</p>
+        </div>
+
+        <!-- 9. All You Can Eat -->
+        <div class="facility-card fade-up">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 17h18"></path>
+              <path d="M19 17v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1"></path>
+              <path d="M4 14a8 8 0 0 1 16 0"></path>
+              <line x1="12" y1="3" x2="12" y2="6"></line>
+            </svg>
+          </div>
+          <h3>All You Can Eat</h3>
+          <p>Unlimited buffet & grand thali service featuring non-stop refills of gravies, rotis, rice, and desserts.</p>
+        </div>
+
+        <!-- 10. Vegan Options Available -->
+        <div class="facility-card fade-up delay-1">
+          <div class="facility-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22v-8"></path>
+              <path d="M12 14c-4-4-7.5-3.5-9 1 3.5 1.5 7 0 9-1Z"></path>
+              <path d="M12 11c3-3 6.5-2.5 8 1-3 1.5-6 0-8-1Z"></path>
+              <path d="M12 7V2"></path>
+            </svg>
+          </div>
+          <h3>Vegan Options Available</h3>
+          <p>Special 100% dairy-free options crafted freshly upon request without milk, butter, ghee, paneer, or curd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       6. FOOD GALLERY SECTION
+       ========================================== -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">📸</span> <span class="veg-indicator"></span> Signature Delights
+        </span>
+        <h2 class="section-title">A Glimpse Into Our Kitchen <span class="wobble-icon">✨</span></h2>
+        <p class="section-subtitle">
+          Explore the vibrant colors, authentic spices, and culinary artistry handcrafted fresh every day at Ishan Pure Veg.
+        </p>
+      </div>
+
+      <div class="gallery-grid fade-up">
+        <!-- 1. Royal Thali -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Royal Vegetarian Thali">
+          <img src="images/gallery/thali.jpg" alt="Royal Vegetarian Thali" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Special Thali</span>
+            <h4>Royal Vegetarian Thali</h4>
+            <span>Grand Feast & Variety</span>
+          </div>
+        </div>
+
+        <!-- 2. Dum Biryani -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Matka Dum Biryani">
+          <img src="images/gallery/biryani.jpg" alt="Matka Dum Biryani" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Rice & Biryani</span>
+            <h4>Matka Dum Biryani</h4>
+            <span>Slow Cooked Fragrance</span>
+          </div>
+        </div>
+
+        <!-- 3. Paneer Butter Masala -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Paneer Butter Masala">
+          <img src="images/gallery/paneer.jpg" alt="Paneer Butter Masala" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">North Indian</span>
+            <h4>Paneer Butter Masala</h4>
+            <span>Rich Cashew Gravy</span>
+          </div>
+        </div>
+
+        <!-- 4. Mysore Masala Dosa -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Crispy Masala Dosa">
+          <img src="images/gallery/dosa.jpg" alt="Crispy Masala Dosa" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">South Indian</span>
+            <h4>Crispy Masala Dosa</h4>
+            <span>Piping Hot Chutneys</span>
+          </div>
+        </div>
+
+        <!-- 5. Tandoori Paneer Tikka -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Paneer Tikka Tandoor">
+          <img src="images/gallery/tikka.jpg" alt="Paneer Tikka Tandoor" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Tandoor & Starters</span>
+            <h4>Paneer Tikka Tandoor</h4>
+            <span>Smoky Clay-Oven Roast</span>
+          </div>
+        </div>
+
+        <!-- 6. Special Pav Bhaji -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Ishan Special Pav Bhaji">
+          <img src="images/gallery/pavbhaji.jpg" alt="Ishan Special Pav Bhaji" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Street Delights</span>
+            <h4>Ishan Special Pav Bhaji</h4>
+            <span>Amul Butter Mashed Curry</span>
+          </div>
+        </div>
+
+        <!-- 7. Indo-Chinese Schezwan Noodles -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Veg Schezwan Noodles">
+          <img src="images/gallery/noodles.jpg" alt="Veg Schezwan Noodles" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Indo-Chinese</span>
+            <h4>Veg Schezwan Noodles</h4>
+            <span>Wok Tossed & Spicy</span>
+          </div>
+        </div>
+
+        <!-- 8. Chole Bhature -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Amritsari Chole Bhature">
+          <img src="images/gallery/cholebhature.jpg" alt="Amritsari Chole Bhature" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">North Indian</span>
+            <h4>Amritsari Chole Bhature</h4>
+            <span>Fluffy Bhature & Spicy Chole</span>
+          </div>
+        </div>
+
+        <!-- 9. Sizzling Paneer Platter -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Sizzling Veg Platter">
+          <img src="images/gallery/sizzlingplatter.jpg" alt="Sizzling Veg Platter" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Chef's Special</span>
+            <h4>Sizzling Veg Platter</h4>
+            <span>Smoky Hot Iron Plate</span>
+          </div>
+        </div>
+
+        <!-- 10. Gulab Jamun with Ice Cream -->
+        <div class="gallery-item" tabindex="0" role="button" aria-label="View Gulab Jamun with Ice Cream">
+          <img src="images/gallery/dessert.jpg" alt="Gulab Jamun with Ice Cream" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-category-pill">Desserts</span>
+            <h4>Gulab Jamun & Ice Cream</h4>
+            <span>Warm Saffron Dumplings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- View Full Menu CTA Button -->
+      <div class="gallery-cta-wrapper fade-up">
+        <a href="#menu" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 3h18v18H3zM9 9h6v6H9z"></path>
+          </svg>
+          View Full Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       7. CUSTOMER REVIEWS & RATINGS SECTION
+       ========================================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">⭐</span> <span class="veg-indicator"></span> Guest Testimonials
+        </span>
+        <h2 class="section-title">Customer Reviews & Ratings <span class="wobble-icon">❤️</span></h2>
+        <p class="section-subtitle">
+          Real love and appreciation from Pune's foodies who make Ishan Pure Veg their go-to dining choice.
+        </p>
+      </div>
+
+      <!-- Prominent Aggregate Rating Badge -->
+      <div class="rating-banner-wrapper fade-up">
+        <div class="rating-prominent-badge">
+          <span class="rating-score-highlight">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span class="counter-num" data-target="4.4" data-decimals="1" data-suffix=" ★ Rating">4.4 ★ Rating</span>
+          </span>
+          <span><span class="counter-num" data-target="5000" data-suffix="+">5,000+</span> Happy Customers across Google, Justdial & Restaurant Guru</span>
+        </div>
+      </div>
+
+      <!-- Reviews 3-Card Grid -->
+      <div class="reviews-grid">
+        <!-- Review Card 1 -->
+        <div class="review-card fade-up">
+          <div>
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <div class="review-quote-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="review-text">
+              "I've been visiting Ishan Pure Veg for the last 4-5 years, and it continues to be one of my absolute favourite places to eat. I've been to both the Model Colony branch and the Sinhgad Road branch, and the experience at both is consistently amazing. My go-to dish is their Matka Dum Biryani, and honestly, it never disappoints."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="review-author-avatar">LC</div>
+            <div class="review-author-info">
+              <h4>Long-time Customer</h4>
+              <span>Regular Patron • Sinhgad & Model Colony</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="review-card fade-up delay-1">
+          <div>
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <div class="review-quote-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="review-text">
+              "Ishan Pure Veg is a must-try place. If you're looking for idli vada, vada sambhar, dosas, pav bhaji etc., trust me Ishan pure veg is equally good and I guess it's underrated. Loved the sambhar especially. Their chai is awesome — you can try the chai 1 by 2 in a glass."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="review-author-avatar">GR</div>
+            <div class="review-author-info">
+              <h4>Google Reviewer</h4>
+              <span>Local Guide • Verified Pune Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="review-card fade-up delay-2">
+          <div>
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <div class="review-quote-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="review-text">
+              "Good service, customised options and quick variety modification. Well organised and the service is good — the best part is they have a valet service available."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="review-author-avatar">VD</div>
+            <div class="review-author-info">
+              <h4>Verified Diner</h4>
+              <span>Dine-In Customer • Family Visit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transparency Note -->
+      <p class="reviews-note fade-up">
+        ℹ️ Ratings aggregated from Google, Justdial & Restaurant Guru
+      </p>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       8. HAPPY DINERS / OUR GUESTS SECTION
+       ========================================== -->
+  <section class="section happy-diners-section" id="guests">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">❤️</span> <span class="veg-indicator"></span> Happy Diners
+        </span>
+        <h2 class="section-title">Loved By Our Guests <span class="wobble-icon">✨</span></h2>
+        <p class="section-subtitle">
+          From hearty family dinners to quick morning breakfasts, here’s why Punekars keep returning to Ishan.
+        </p>
+      </div>
+
+      <!-- Happy Diners Grid / Horizontal Scroller on Mobile -->
+      <div class="guests-scroll-container fade-up">
+        <div class="guests-grid">
+          <!-- Card 1: Sinhgad Road -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80" alt="Ananya Joshi" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Ananya Joshi</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"The Matka Dum Biryani and Paneer Tikka here are unbeatable. Our family's go-to dinner place every weekend!"</p>
+          </div>
+
+          <!-- Card 2: Model Colony -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=160&q=80" alt="Rahul Deshmukh" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Rahul Deshmukh</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Authentic filter coffee, piping hot idlis & crispy dosas. The best morning breakfast ritual in Shivajinagar."</p>
+          </div>
+
+          <!-- Card 3: Sinhgad Road -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&h=160&q=80" alt="Sneha Kulkarni" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Sneha Kulkarni</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"100% pure veg with top-notch kitchen hygiene. Valet parking on Sinhgad Road makes family outings completely stress-free."</p>
+          </div>
+
+          <!-- Card 4: Model Colony -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80" alt="Vikram Patil" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Vikram Patil</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Their buttery Pav Bhaji and Paneer Butter Masala are legendary. Consistently great flavours and prompt table service."</p>
+          </div>
+
+          <!-- Card 5: Sinhgad Road -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&h=160&q=80" alt="Pooja Shinde" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Pooja Shinde</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Love the breezy outdoor seating in the evenings. The special 1-by-2 chai in glasses and fresh starters never disappoint!"</p>
+          </div>
+
+          <!-- Card 6: Model Colony -->
+          <div class="guest-card">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=160&h=160&q=80" alt="Aditya Jagtap" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Aditya Jagtap</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Top-tier parcel packaging for office lunches. Food arrives steaming hot with zero spills every single time."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative Thali Plate Wave Divider -->
+  <div class="thali-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path d="M0,0 C150,18 350,-12 500,8 C650,28 850,-8 1000,10 C1100,20 1150,5 1200,0 L1200,24 L0,24 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ==========================================
+       9. OUR LOCATIONS SECTION
+       ========================================== -->
+  <section class="section section-alt" id="locations">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">
+          <span class="wobble-icon">📍</span> <span class="veg-indicator"></span> Visit Us in Pune
+        </span>
+        <h2 class="section-title">Our Restaurant Branches <span class="wobble-icon">🌶️</span></h2>
+        <p class="section-subtitle">
+          Two conveniently accessible locations in Pune with dedicated parking, friendly staff, and mouthwatering food.
+        </p>
+      </div>
+
+      <div class="locations-grid">
+        <!-- Branch 1 - Sinhgad Road -->
+        <div class="location-card fade-up">
+          <div class="location-card-header">
+            <div>
+              <span class="location-branch-num">Branch 01</span>
+              <h3 class="location-branch-name">Sinhgad Road Branch</h3>
+            </div>
+            <div class="location-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div class="location-card-body">
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Address</h4>
+                <p>Vishnupriya Apartment, Sinhgad Rd, opposite Water Works, Shivaprasad Housing Society, Dattawadi, Pune, Maharashtra 411030</p>
+              </div>
+            </div>
+
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Phone & Orders</h4>
+                <p><a href="tel:9890320150" class="phone-link"><strong>+91 9890320150</strong></a></p>
+              </div>
+            </div>
+
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Opening Hours</h4>
+                <p>7:00 AM – 11:30 PM (All 7 Days Open)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="location-map-container">
+            <iframe 
+              title="Ishan Pure Veg Sinhgad Road Location"
+              src="https://maps.google.com/maps?q=Vishnupriya%20Apartment,%20Sinhgad%20Rd,%20Dattawadi,%20Pune,%20Maharashtra%20411030&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="location-card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Vishnupriya+Apartment+Sinhgad+Rd+opposite+Water+Works+Dattawadi+Pune+Maharashtra+411030" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              Get Directions
+            </a>
+            <a href="tel:9890320150" class="btn btn-outline btn-sm">
+              Call Branch
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 2 - Model Colony -->
+        <div class="location-card fade-up delay-1">
+          <div class="location-card-header">
+            <div>
+              <span class="location-branch-num">Branch 02</span>
+              <h3 class="location-branch-name">Model Colony Branch</h3>
+            </div>
+            <div class="location-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div class="location-card-body">
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Address</h4>
+                <p>Opp IDBI Bank, Paripriya Apartment, 448/2, Gokhale Rd, near Dhotre Chowk, Model Colony, Shivajinagar, Pune, Maharashtra 411016</p>
+              </div>
+            </div>
+
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Phone & Orders</h4>
+                <p><a href="tel:7875727608" class="phone-link"><strong>+91 7875727608</strong></a></p>
+              </div>
+            </div>
+
+            <div class="location-info-row">
+              <div class="location-info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="location-info-content">
+                <h4>Opening Hours</h4>
+                <p>7:00 AM – 11:30 PM (All 7 Days Open)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="location-map-container">
+            <iframe 
+              title="Ishan Pure Veg Model Colony Location"
+              src="https://maps.google.com/maps?q=Paripriya%20Apartment,%20448/2,%20Gokhale%20Rd,%20Model%20Colony,%20Shivajinagar,%20Pune,%20Maharashtra%20411016&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="location-card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Paripriya+Apartment+448/2+Gokhale+Rd+Model+Colony+Shivajinagar+Pune+Maharashtra+411016" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              Get Directions
+            </a>
+            <a href="tel:7875727608" class="btn btn-outline btn-sm">
+              Call Branch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. INSTAGRAM / SOCIAL SECTION
+       ========================================== -->
+  <section class="section section-alt" id="social">
+    <div class="container">
+      <div class="instagram-header fade-up">
+        <div class="instagram-title-group">
+          <span class="section-tag">
+            <span class="veg-indicator"></span> Follow the Journey
+          </span>
+          <h2>Join Our Foodie Community</h2>
+          <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="instagram-handle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            @ishanpureveg
+          </a>
+        </div>
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+          Follow on Instagram
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+
+      <div class="instagram-grid">
+        <!-- Insta 1 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-1.jpg) -->
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="Biryani Special" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 482</span>
+            <span>💬 39</span>
+          </div>
+        </a>
+
+        <!-- Insta 2 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up delay-1">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-2.jpg) -->
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80" alt="Paneer Butter Masala" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 612</span>
+            <span>💬 54</span>
+          </div>
+        </a>
+
+        <!-- Insta 3 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up delay-2">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-3.jpg) -->
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=500&q=80" alt="Tandoori Paneer Tikka" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 389</span>
+            <span>💬 27</span>
+          </div>
+        </a>
+
+        <!-- Insta 4 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up delay-3">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-4.jpg) -->
+          <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=500&q=80" alt="Masala Dosa" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 720</span>
+            <span>💬 61</span>
+          </div>
+        </a>
+
+        <!-- Insta 5 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up delay-4">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-5.jpg) -->
+          <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80" alt="Hakka Noodles" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 518</span>
+            <span>💬 42</span>
+          </div>
+        </a>
+
+        <!-- Insta 6 -->
+        <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="insta-card fade-up delay-5">
+          <!-- TODO: Replace with real photo from @ishanpureveg Instagram (Target: images/gallery/insta-6.jpg) -->
+          <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=500&q=80" alt="Warm Gulab Jamun" class="insta-img">
+          <div class="insta-overlay">
+            <span>❤️ 894</span>
+            <span>💬 78</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="instagram-subtext fade-up">
+        Loved by 750+ followers on Instagram — join the conversation!
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <h3>Ishan Pure Veg</h3>
+          <p class="tagline">"Khavaiyye Punekars' Veg Favourite"</p>
+          <p class="desc">
+            Serving Pune’s finest multi-cuisine pure vegetarian delicacies across Sinhgad Road and Model Colony with uncompromised taste and purity.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Our Story</a></li>
+            <li><a href="#menu">Food Menu & Specials</a></li>
+            <li><a href="#facilities">Dining Facilities</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#locations">Branch Locations</a></li>
+            <li><a href="#social">Instagram Feed</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Sinhgad Rd Branch -->
+        <div class="footer-branch-item">
+          <h4 class="footer-heading">Sinhgad Road Branch</h4>
+          <p>Vishnupriya Apartment, Sinhgad Rd, opposite Water Works, Shivaprasad Housing Society, Dattawadi, Pune 411030</p>
+          <p><strong>Timing:</strong> 7:00 AM – 11:30 PM</p>
+          <p><a href="tel:9890320150" class="phone-link">📞 +91 9890320150</a></p>
+        </div>
+
+        <!-- Col 4: Model Colony Branch -->
+        <div class="footer-branch-item">
+          <h4 class="footer-heading">Model Colony Branch</h4>
+          <p>Opp IDBI Bank, Paripriya Apartment, 448/2, Gokhale Rd, near Dhotre Chowk, Model Colony, Shivajinagar, Pune 411016</p>
+          <p><strong>Timing:</strong> 7:00 AM – 11:30 PM</p>
+          <p><a href="tel:7875727608" class="phone-link">📞 +91 7875727608</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ishan Pure Veg Restaurant. All Rights Reserved. Pure Vegetarian Dining in Pune.</p>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/ishanpureveg/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODALS: Order Online & Gallery Lightbox
+       ========================================== -->
+
+  <!-- Order Modal -->
+  <div class="modal" id="order-modal">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="veg-indicator lg" style="margin-bottom: 0.5rem;"></span>
+        <h3>Order Online / Contact</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem;">Select your nearest branch for direct call or online delivery:</p>
+      </div>
+
+      <div class="modal-branches-grid">
+        <!-- Branch 1 Option -->
+        <div class="modal-branch-option">
+          <h4>📍 Sinhgad Road Branch</h4>
+          <p>Vishnupriya Appt, Dattawadi, Sinhgad Rd, Pune</p>
+          <div class="modal-order-btns">
+            <a href="tel:9890320150" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Call 9890320150
+            </a>
+            <a href="https://www.swiggy.com/restaurants/ishan-pure-veg-dattawadi-pune" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+              Order Delivery
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 2 Option -->
+        <div class="modal-branch-option">
+          <h4>📍 Model Colony Branch</h4>
+          <p>Opp IDBI Bank, Gokhale Rd, Shivajinagar, Pune</p>
+          <div class="modal-order-btns">
+            <a href="tel:7875727608" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Call 7875727608
+            </a>
+            <a href="https://www.zomato.com/pune/restaurants/ishan-pure-veg" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+              Order Delivery
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal" id="gallery-lightbox">
+    <div class="modal-dialog" style="max-width: 800px; padding: 1.5rem; background: #121e17; color: #ffffff;">
+      <button class="modal-close" id="lightbox-close" style="background: rgba(255,255,255,0.2); color: #fff;" aria-label="Close image preview">&times;</button>
+      <img id="lightbox-img" src="" alt="Gallery Preview" style="width: 100%; max-height: 520px; object-fit: contain; border-radius: var(--radius-md); margin-bottom: 1rem;">
+      <p id="lightbox-caption" style="text-align: center; color: var(--color-accent-light); font-weight: 600; font-size: 1rem;"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
