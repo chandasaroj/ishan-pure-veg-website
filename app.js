@@ -452,50 +452,83 @@ function initHeroGlowFollower() {
 }
 
 /* ==========================================================================
-   11. Classic Fade Slideshow (W3.CSS style with 3s auto-advance & dot controls)
+   11. Paged Testimonial Carousel (3 cards desktop / 2 tablet / 1 mobile)
    ========================================================================== */
 function initGuestsSlideshow() {
-  const container = document.getElementById('classic-reviews-slideshow');
-  if (!container) return;
+  const container = document.getElementById('paged-reviews-slideshow');
+  const track = document.getElementById('paged-slideshow-track');
+  const dotsContainer = document.getElementById('paged-slideshow-dots');
+  
+  if (!container || !track || !dotsContainer) return;
 
-  const slides = container.querySelectorAll('.classic-review-slide');
-  const dots = container.querySelectorAll('.slideshow-dot');
-  if (!slides.length) return;
+  const cards = track.querySelectorAll('.guest-card');
+  const totalCards = cards.length;
+  if (!totalCards) return;
 
-  let slideIndex = 0;
+  let currentPage = 0;
   let slideTimer = null;
 
-  function showSlide(n) {
-    if (n >= slides.length) {
-      slideIndex = 0;
-    } else if (n < 0) {
-      slideIndex = slides.length - 1;
+  function getCardsPerView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 992) return 2;
+    return 3;
+  }
+
+  function getTotalPages() {
+    const cardsPerView = getCardsPerView();
+    return Math.ceil(totalCards / cardsPerView);
+  }
+
+  function renderDots() {
+    dotsContainer.innerHTML = '';
+    const totalPages = getTotalPages();
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement('button');
+      dot.className = `slideshow-dot ${i === currentPage ? 'active' : ''}`;
+      dot.setAttribute('aria-label', `Go to page ${i + 1}`);
+      dot.addEventListener('click', () => {
+        goToPage(i);
+        startAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goToPage(pageIndex) {
+    const totalPages = getTotalPages();
+    if (pageIndex >= totalPages) {
+      currentPage = 0;
+    } else if (pageIndex < 0) {
+      currentPage = totalPages - 1;
     } else {
-      slideIndex = n;
+      currentPage = pageIndex;
     }
 
-    // Hide all slides
-    slides.forEach(slide => {
-      slide.classList.remove('active-slide');
-    });
+    const cardsPerView = getCardsPerView();
+    const firstCardIndex = currentPage * cardsPerView;
+    const targetCard = cards[firstCardIndex] || cards[0];
 
-    // Reset all dots
-    dots.forEach(dot => {
-      dot.classList.remove('active');
-    });
-
-    // Show active slide & highlight corresponding dot
-    slides[slideIndex].classList.add('active-slide');
-    if (dots[slideIndex]) {
-      dots[slideIndex].classList.add('active');
+    if (targetCard) {
+      const gap = parseInt(window.getComputedStyle(track).gap) || 0;
+      const cardWidth = targetCard.offsetWidth;
+      const moveDistance = (cardWidth + gap) * firstCardIndex;
+      track.style.transform = `translateX(-${moveDistance}px)`;
     }
+
+    const dots = dotsContainer.querySelectorAll('.slideshow-dot');
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentPage);
+    });
+  }
+
+  function nextSlide() {
+    goToPage(currentPage + 1);
   }
 
   function startAutoSlide() {
     stopAutoSlide();
-    slideTimer = setInterval(() => {
-      showSlide(slideIndex + 1);
-    }, 3000);
+    slideTimer = setInterval(nextSlide, 3000);
   }
 
   function stopAutoSlide() {
@@ -505,19 +538,19 @@ function initGuestsSlideshow() {
     }
   }
 
-  // Add click handlers for dots
-  dots.forEach((dot, idx) => {
-    dot.addEventListener('click', () => {
-      showSlide(idx);
-      startAutoSlide();
-    });
-  });
-
-  // Pause auto-advance on mouse hover
   container.addEventListener('mouseenter', stopAutoSlide);
   container.addEventListener('mouseleave', startAutoSlide);
 
-  // Initialize
-  showSlide(0);
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      renderDots();
+      goToPage(Math.min(currentPage, getTotalPages() - 1));
+    }, 150);
+  });
+
+  renderDots();
+  goToPage(0);
   startAutoSlide();
 }

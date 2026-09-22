@@ -1994,42 +1994,48 @@ ul, ol {
    Happy Diners / Our Guests Section
    ========================================================================== */
 /* ==========================================================================
-   Happy Diners / Our Guests Section (Classic Fade Slideshow)
+   Happy Diners / Our Guests Section (Paged 3-Card Carousel)
    ========================================================================== */
 .happy-diners-section {
   background-color: var(--color-bg-main);
   position: relative;
+  overflow: hidden;
 }
 
-.classic-slideshow-container {
-  max-width: 620px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.classic-review-slide {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
-
-.classic-review-slide.active-slide {
-  display: block;
-  opacity: 1;
-}
-
-.classic-slideshow-container .guest-card {
+.paged-slideshow-container {
   width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.paged-slideshow-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+  gap: 1.75rem;
+}
+
+/* 3 cards per row on Desktop */
+.paged-slideshow-track .guest-card {
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 3.5rem) / 3);
+  min-width: 0;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 2.25rem 2rem;
+  padding: 1.65rem 1.5rem;
   box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
-  min-height: 190px;
+  transition: transform var(--transition-normal), 
+              box-shadow var(--transition-normal), 
+              border-color var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.classic-slideshow-container .guest-card:hover {
+.paged-slideshow-track .guest-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
   border-color: rgba(217, 119, 6, 0.35);
 }
@@ -2042,13 +2048,18 @@ ul, ol {
 }
 
 .guest-avatar {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.guest-card:hover .guest-avatar {
+  transform: scale(1.06);
 }
 
 .guest-meta {
@@ -2067,7 +2078,7 @@ ul, ol {
 }
 
 .guest-name {
-  font-size: 1rem;
+  font-size: 0.975rem;
   font-weight: 700;
   color: var(--color-primary-dark);
   margin: 0;
@@ -2075,36 +2086,36 @@ ul, ol {
 }
 
 .guest-branch-tag {
-  font-size: 0.725rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--color-primary);
   background-color: rgba(27, 62, 43, 0.08);
-  padding: 0.18rem 0.6rem;
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
   letter-spacing: 0.02em;
 }
 
 .guest-rating {
   color: #f59e0b;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 1.5px;
 }
 
 .guest-quote {
-  font-size: 0.975rem;
-  line-height: 1.65;
+  font-size: 0.9125rem;
+  line-height: 1.55;
   color: var(--color-text-main);
   margin: 0;
   font-style: italic;
 }
 
-/* Dots Navigation Styling */
+/* Dynamic Page Dots Styling */
 .slideshow-dots {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 
 .slideshow-dot {
@@ -2128,12 +2139,28 @@ ul, ol {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   opacity: 1;
-  transform: scale(1.15);
+  width: 28px;
+  border-radius: var(--radius-full);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .paged-slideshow-track {
+    gap: 1.25rem;
+  }
+  /* 2 cards per row on Tablet */
+  .paged-slideshow-track .guest-card {
+    flex: 0 0 calc((100% - 1.25rem) / 2);
+  }
 }
 
 @media (max-width: 640px) {
-  .classic-slideshow-container .guest-card {
-    padding: 1.5rem 1.25rem;
+  .paged-slideshow-track {
+    gap: 1rem;
+  }
+  /* 1 card per row on Mobile */
+  .paged-slideshow-track .guest-card {
+    flex: 0 0 100%;
   }
 }
 
