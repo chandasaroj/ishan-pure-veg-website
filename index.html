@@ -1049,10 +1049,10 @@
         </p>
       </div>
 
-      <!-- Happy Diners Grid / Horizontal Scroller on Mobile -->
-      <div class="guests-scroll-container fade-up">
-        <div class="guests-grid">
-          <!-- Card 1: Sinhgad Road -->
+      <!-- Marquee Scrolling Container -->
+      <div class="guests-marquee-wrapper fade-up">
+        <div class="guests-marquee-track">
+          <!-- Set 1 (Original 6 Cards) -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80" alt="Ananya Joshi" class="guest-avatar" loading="lazy">
@@ -1067,7 +1067,6 @@
             <p class="guest-quote">"The Matka Dum Biryani and Paneer Tikka here are unbeatable. Our family's go-to dinner place every weekend!"</p>
           </div>
 
-          <!-- Card 2: Model Colony -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=160&q=80" alt="Rahul Deshmukh" class="guest-avatar" loading="lazy">
@@ -1082,7 +1081,6 @@
             <p class="guest-quote">"Authentic filter coffee, piping hot idlis & crispy dosas. The best morning breakfast ritual in Shivajinagar."</p>
           </div>
 
-          <!-- Card 3: Sinhgad Road -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&h=160&q=80" alt="Sneha Kulkarni" class="guest-avatar" loading="lazy">
@@ -1097,7 +1095,6 @@
             <p class="guest-quote">"100% pure veg with top-notch kitchen hygiene. Valet parking on Sinhgad Road makes family outings completely stress-free."</p>
           </div>
 
-          <!-- Card 4: Model Colony -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80" alt="Vikram Patil" class="guest-avatar" loading="lazy">
@@ -1112,7 +1109,6 @@
             <p class="guest-quote">"Their buttery Pav Bhaji and Paneer Butter Masala are legendary. Consistently great flavours and prompt table service."</p>
           </div>
 
-          <!-- Card 5: Sinhgad Road -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&h=160&q=80" alt="Pooja Shinde" class="guest-avatar" loading="lazy">
@@ -1127,7 +1123,6 @@
             <p class="guest-quote">"Love the breezy outdoor seating in the evenings. The special 1-by-2 chai in glasses and fresh starters never disappoint!"</p>
           </div>
 
-          <!-- Card 6: Model Colony -->
           <div class="guest-card">
             <div class="guest-card-header">
               <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=160&h=160&q=80" alt="Aditya Jagtap" class="guest-avatar" loading="lazy">
@@ -1137,6 +1132,91 @@
                   <span class="guest-branch-tag">Model Colony</span>
                 </div>
                 <div class="guest-rating" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Top-tier parcel packaging for office lunches. Food arrives steaming hot with zero spills every single time."</p>
+          </div>
+
+          <!-- Set 2 (Duplicate for Seamless Infinite Marquee Loop) -->
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80" alt="Ananya Joshi" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Ananya Joshi</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"The Matka Dum Biryani and Paneer Tikka here are unbeatable. Our family's go-to dinner place every weekend!"</p>
+          </div>
+
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=160&q=80" alt="Rahul Deshmukh" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Rahul Deshmukh</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Authentic filter coffee, piping hot idlis & crispy dosas. The best morning breakfast ritual in Shivajinagar."</p>
+          </div>
+
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&h=160&q=80" alt="Sneha Kulkarni" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Sneha Kulkarni</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"100% pure veg with top-notch kitchen hygiene. Valet parking on Sinhgad Road makes family outings completely stress-free."</p>
+          </div>
+
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80" alt="Vikram Patil" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Vikram Patil</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Their buttery Pav Bhaji and Paneer Butter Masala are legendary. Consistently great flavours and prompt table service."</p>
+          </div>
+
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&h=160&q=80" alt="Pooja Shinde" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Pooja Shinde</h4>
+                  <span class="guest-branch-tag">Sinhgad Rd</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="guest-quote">"Love the breezy outdoor seating in the evenings. The special 1-by-2 chai in glasses and fresh starters never disappoint!"</p>
+          </div>
+
+          <div class="guest-card" aria-hidden="true">
+            <div class="guest-card-header">
+              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=160&h=160&q=80" alt="Aditya Jagtap" class="guest-avatar" loading="lazy">
+              <div class="guest-meta">
+                <div class="guest-name-row">
+                  <h4 class="guest-name">Aditya Jagtap</h4>
+                  <span class="guest-branch-tag">Model Colony</span>
+                </div>
+                <div class="guest-rating">★★★★★</div>
               </div>
             </div>
             <p class="guest-quote">"Top-tier parcel packaging for office lunches. Food arrives steaming hot with zero spills every single time."</p>
