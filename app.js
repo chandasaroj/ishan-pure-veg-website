@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNumberCounters();
   initPlayfulButtonRipples();
   initHeroGlowFollower();
+  initGuestsSlideshow();
 });
 
 /* ==========================================================================
@@ -448,4 +449,75 @@ function initHeroGlowFollower() {
       glow.style.setProperty('--mouse-y', `${y}%`);
     });
   }
+}
+
+/* ==========================================================================
+   11. Classic Fade Slideshow (W3.CSS style with 3s auto-advance & dot controls)
+   ========================================================================== */
+function initGuestsSlideshow() {
+  const container = document.getElementById('classic-reviews-slideshow');
+  if (!container) return;
+
+  const slides = container.querySelectorAll('.classic-review-slide');
+  const dots = container.querySelectorAll('.slideshow-dot');
+  if (!slides.length) return;
+
+  let slideIndex = 0;
+  let slideTimer = null;
+
+  function showSlide(n) {
+    if (n >= slides.length) {
+      slideIndex = 0;
+    } else if (n < 0) {
+      slideIndex = slides.length - 1;
+    } else {
+      slideIndex = n;
+    }
+
+    // Hide all slides
+    slides.forEach(slide => {
+      slide.classList.remove('active-slide');
+    });
+
+    // Reset all dots
+    dots.forEach(dot => {
+      dot.classList.remove('active');
+    });
+
+    // Show active slide & highlight corresponding dot
+    slides[slideIndex].classList.add('active-slide');
+    if (dots[slideIndex]) {
+      dots[slideIndex].classList.add('active');
+    }
+  }
+
+  function startAutoSlide() {
+    stopAutoSlide();
+    slideTimer = setInterval(() => {
+      showSlide(slideIndex + 1);
+    }, 3000);
+  }
+
+  function stopAutoSlide() {
+    if (slideTimer) {
+      clearInterval(slideTimer);
+      slideTimer = null;
+    }
+  }
+
+  // Add click handlers for dots
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      showSlide(idx);
+      startAutoSlide();
+    });
+  });
+
+  // Pause auto-advance on mouse hover
+  container.addEventListener('mouseenter', stopAutoSlide);
+  container.addEventListener('mouseleave', startAutoSlide);
+
+  // Initialize
+  showSlide(0);
+  startAutoSlide();
 }
